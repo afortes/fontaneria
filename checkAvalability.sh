@@ -18,6 +18,8 @@
 #para enviar:
 #echo "texto a teclear" | mail -s "Asunto" usuario@gmail.com
 
+##################### Cron de ejemplo ##############
+*/1 * * * * /home/afstid/Documentos/fontaneria/checkAvalability.sh
 
 
 HOST=
@@ -27,5 +29,5 @@ nc -w 5 $HOST 22
 if [ $? -eq 0 ]; then
 	echo "Test de conexión positivo realizado a $HOST" | mail -s "Existe conexion a $HOST" alexandrofortessilva@gmail.com
 else
-	echo "Nada de nada"
+	echo "Test de conexión NEGATIVO realizado a $HOST" | mail -s "NO Existe conexion a $HOST" alexandrofortessilva@gmail.com
 fi
