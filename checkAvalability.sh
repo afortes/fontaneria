@@ -28,6 +28,4 @@ HOST=
 nc -w 5 $HOST 22
 if [ $? -eq 0 ]; then
 	echo "Test de conexión positivo realizado a $HOST" | mail -s "Existe conexion a $HOST" alexandrofortessilva@gmail.com
-else
-	echo "Test de conexión NEGATIVO realizado a $HOST" | mail -s "NO Existe conexion a $HOST" alexandrofortessilva@gmail.com
 fi
