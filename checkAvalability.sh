@@ -19,7 +19,7 @@
 #echo "texto a teclear" | mail -s "Asunto" usuario@gmail.com
 
 ##################### Cron de ejemplo ##############
-*/1 * * * * /home/afstid/Documentos/fontaneria/checkAvalability.sh
+#*/1 * * * * /home/afstid/Documentos/fontaneria/checkAvalability.sh
 
 
 HOST=
